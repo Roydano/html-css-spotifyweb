@@ -1,31 +1,41 @@
-/* Common */
-
+/* COMMON */
 
 body{
     font-family: 'Montserrat', sans-serif;
+    color: white;
 }
 
+li{
+    list-style: none;
+    display: inline-block;
+}
 
-
-
-
+a{
+    text-decoration: none;    
+    color: #7c7e83;
+    font-size: 12px;
+}
 
 
 
 /* main */
 
+/* pannello laterale */
 .aside{
     height: calc(100vh - 90px);
     background-color: black;
 
 }
 
+
+/* container centrale */
 .main-container{
     height: calc(100vh - 90px);
     overflow: auto;
     background-color: #141922;
 }
 
+/* barra layover */
 .main-header{
     height: 90px;
     background-color: rgba(0, 0, 0, 0.5);
@@ -44,7 +54,6 @@ body{
 }
 
 .upgrade>span{
-    color: white;
     font-size: 12px;
     text-transform: uppercase;
     border: 1px solid white;
@@ -53,10 +62,21 @@ body{
     padding: 10px 40px;
 }
 
-
-
+/* contenuto main */
 .main-body{
     margin-top: 90px;
+    padding: 20px;
+}
+
+/* main-menu */
+
+li{
+    text-transform: uppercase;
+}
+
+li a{    
+    font-weight: 600;
+    margin: 0 10px;    
 }
 
 
