@@ -32,21 +32,28 @@ body{
     position: fixed;
     top: 0;
     left: calc((100% / 12) * 2);
-    width: 100%;
+    right: 0;
     z-index: 1;
 }
 
-.clearfix::after{
-    content: '';
-    display: table;
-    clear: both;
+.upgrade{
+    height: 90px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
 }
 
-.main-header span{
+.upgrade>span{
     color: white;
-    float: right;
-    z-index: 2;
+    font-size: 12px;
+    text-transform: uppercase;
+    border: 1px solid white;
+    border-radius: 20px;
+    margin-right: 25px;
+    padding: 10px 40px;
 }
+
+
 
 .main-body{
     margin-top: 90px;
