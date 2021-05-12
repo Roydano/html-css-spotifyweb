@@ -22,7 +22,7 @@ h2{
 
 p{
     font-size: 80%;
-    margin-top: 10px;
+    margin: 10px 0;
     color: #7c7e83;
 }
 
@@ -90,8 +90,6 @@ li a{
     margin: 0 10px;    
 }
 
-/* recently played */
-
 .row img{
     width: 100%;
     margin-top: 20px;
@@ -100,6 +98,10 @@ li a{
 .box-info{
     text-align: center;
     margin-top: 15px;
+}
+
+.main-body .row:last-child img{
+    border-radius: 50%;
 }
 
 
