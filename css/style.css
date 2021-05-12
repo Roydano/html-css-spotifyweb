@@ -1,0 +1,54 @@
+/* Common */
+
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+
+
+
+
+
+/* main */
+
+
+/* footer */
+
+
+
+
+
+/* debug */
+
+.debug .col-xs-2 .aside{
+    height: 100vh;
+    background-color: red;
+}
+
+.debug .col-xs-10 .main-container{
+    height: 100vh;
+    background-color: greenyellow;
+}
+
+
+.debug .col-xs-12 .main-header{
+    height: 90px;
+    background-color: mediumslateblue;
+}
+
+
+
+
+
+
+
+
+/* footer debug */
+
+.debug footer .col-xs-12{
+    height: 90px;
+    background-color: black;
+}
