@@ -35,6 +35,7 @@ p{
 .aside{
     height: calc(100vh - 90px);
     background-color: black;
+    overflow: hidden;
     
 
 }
@@ -47,13 +48,16 @@ p{
 }
 
 .sidebar-container{
-    min-height: 480px;
+    min-height: 410px;
     height: calc(100vh - 90px);
     padding: 5px 10px;
 }
 
 .sidebar-top{
     width: 100%;
+    height: calc( 100% - 100px);
+
+    
 }
 
 /* logo */
@@ -70,7 +74,12 @@ p{
 
 /* menu lista sidebar-top */
 
-nav .list-side-menu{
+.sidebar-top nav{
+    margin-bottom: 20px;
+}
+
+nav .list-side-menu,
+.playlist .add{
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -85,13 +94,76 @@ nav .list-side-menu div>img{
     filter: invert(0.5);
 }
 
-nav .list-side-menu p{
+nav .list-side-menu p,
+.playlist .add p{
     margin-left: 10px;
 }
 
-nav .list-side-menu p>a{
+nav .list-side-menu p>a,
+.playlist .add p>a{
     font-weight: 600;
 }
+
+
+/* palylist side bar */
+
+.playlist{
+    overflow: hidden;
+    height: 80%;
+}
+
+.playlist h4{
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.playlist .add div{
+    width: 40px;
+    height: 40px;
+    background-color: #a3a3a3;
+    text-align: center;
+    line-height: 40px;
+}
+
+.playlist .add i{
+    font-size: 22px;
+    color: black;
+}
+
+
+/* lista playlist */
+
+.playlist ul{
+    margin-top: 20px;
+}
+
+.playlist ul li{
+    display: block;
+    margin-bottom: 15px;
+    
+}
+
+.list-overflow{
+    overflow-y: auto;
+    height: 40%;
+}
+
+.playlist a{
+    text-transform: none;
+    margin: 0;
+}
+
+
+/* sidebar-bottom */
+.sidebar-bottom{
+    height: 100px;
+}
+
+
+
+
+
+
 
 /* menu alto */
 
@@ -192,14 +264,13 @@ footer{
 } */
 
 
-.debug .playlist{
+/* .debug .playlist{
     height: 100px;
     background-color: turquoise;
-}
+} */
 
 
 .debug .sidebar-bottom{
-    height: 150px;
     background-color: red;
 }
 
