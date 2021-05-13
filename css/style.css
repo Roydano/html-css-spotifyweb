@@ -277,6 +277,14 @@ footer{
 
 
 
+
+
+
+
+
+
+
+
 /* debug */
 
 /* .debug .aside{
@@ -322,3 +330,10 @@ footer{
     
     background-color: brown;
 } */
+
+
+.debug footer .box{
+    height: 90px;
+    background-color: yellow;
+    border: 1px solid green;
+}
