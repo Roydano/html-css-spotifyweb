@@ -272,17 +272,26 @@ li a{
 footer{
     height: 90px;
     background-color: #282828;
-    padding: 5px 10px;
 
 }
 
-footer .box.sx{
+footer .box{
+    height: 90px
+}
+
+
+/* box sinistra */
+
+footer .box.sx,
+footer .box.dx{
     display: flex;
     justify-content: space-between;
+    padding: 5px 10px;
 }
 
 footer .brano,
-footer .btn{
+footer .btn,
+footer .barra{
     display: flex;
     align-items: center;
 }
@@ -314,6 +323,91 @@ footer .btn i{
 }
 
 
+
+
+
+
+
+/* box centrale */
+
+.box.cnt{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.box.cnt .display-control{
+    text-align: center;
+}
+
+.box.cnt .display-control i{
+    font-size: 15px;
+    margin: 0 10px;
+}
+
+.box.cnt .display-control i:nth-child(3){
+    font-size: 25px;
+    margin: 0 10px;
+}
+
+.box.cnt .barra .sopra{
+    width: 100px;
+    height: 5px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.box.cnt .barra .sotto{
+    width: 400px;
+    height: 5px;
+    background-color: #5a5a5a;
+    border-radius: 5px;
+
+}
+
+.box.cnt .display-time{
+    display: flex;
+    justify-content: center;
+}
+
+.box.cnt .display-time span{
+    margin: 0 20px;
+    color: white;
+}
+
+
+
+
+
+/* box di destra */
+
+
+.box.dx{
+    justify-content: space-around;
+    align-items: center;
+}
+
+.box.dx i{
+    color: white;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+
+.box.dx .barra .sopra{
+    width: 30px;
+    height: 5px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.box.dx .barra .sotto{
+    width: 100px;
+    height: 5px;
+    background-color: #5a5a5a;
+    border-radius: 5px;
+
+}
 
 
 
@@ -372,8 +466,8 @@ footer .btn i{
 } */
 
 
-.debug footer .box{
+/* .debug footer .box{
     height: 90px;
     background-color: yellow;
     border: 1px solid green;
-}
+} */
