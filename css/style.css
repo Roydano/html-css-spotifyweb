@@ -35,12 +35,22 @@ p{
 .aside{
     height: calc(100vh - 90px);
     background-color: black;
+    
 
 }
 
 .aside .row{
     flex-direction: column;
+    height: 100%;
+    width: 100%;
+    
 }
+
+.sidebar-container{
+    min-height: 480px;
+    height: calc(100vh - 90px);
+}
+
 
 
 /* container centrale */
@@ -134,8 +144,26 @@ footer{
 } */
 
 
+.debug .logo{
+    height: 90px;
+    background-color: coral;
+}
+
+.debug .top-menu{
+    height: 200px;
+    background-color: yellow;
+}
+
+.debug .playlist{
+    height: 200px;
+    background-color: turquoise;
+}
 
 
+.debug .sidebar-bottom{
+    height: 150px;
+    background-color: red;
+}
 
 
 
