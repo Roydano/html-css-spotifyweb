@@ -127,12 +127,12 @@ nav .list-side-menu p>a,
     height: 40px;
     background-color: #a3a3a3;
     text-align: center;
-    line-height: 40px;
 }
 
 .playlist .add i{
     font-size: 22px;
     color: black;
+    line-height: 40px;
 }
 
 
@@ -272,8 +272,48 @@ li a{
 footer{
     height: 90px;
     background-color: #282828;
+    padding: 5px 10px;
 
 }
+
+footer .box.sx{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .brano,
+footer .btn{
+    display: flex;
+    align-items: center;
+}
+
+footer .brano .img-icon{
+    height: 60px;
+    width: 60px;    
+    margin-right: 10px;
+    
+}
+
+footer .brano .img-icon>img{
+    width: 100%;
+}
+
+footer .brano-info{
+    line-height: 1;
+}
+
+footer span{
+    font-size: 10px;
+    color: #7c7e83;
+}
+
+footer .btn i{
+    margin-right: 10px;
+    color: #7c7e83;
+    cursor: pointer;
+}
+
+
 
 
 
