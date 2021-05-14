@@ -27,9 +27,9 @@ p{
 }
 
 
-/* main */
+/* MAIN */
 
-/* pannello laterale */
+/* PANNELLO LATERALE */
 .aside{
     height: calc(100vh - 90px);
     background-color: black;
@@ -48,7 +48,7 @@ p{
 .sidebar-container{
     min-height: 410px;
     height: calc(100vh - 90px);
-    padding: 5px 10px;
+    padding: 5px 10px 5px 0;
 }
 
 .sidebar-top{
@@ -70,10 +70,16 @@ p{
 }
 
 
+
 /* menu lista sidebar-top */
 
 .sidebar-top nav{
     margin-bottom: 20px;
+}
+
+
+.list-side-menu:first-child{
+    border-left: 1px solid #adff2f;
 }
 
 nav .list-side-menu,
@@ -105,6 +111,10 @@ nav .list-side-menu p>a,
 .playlist .add p>a,
 .sidebar-bottom .download p>a{
     font-weight: 600;
+}
+
+.active a{
+    color: white;
 }
 
 
@@ -188,7 +198,7 @@ hr{
 }
 
 
-/* main-body */
+/* MAIN BODY */
 
 /* container centrale */
 .main-container{
@@ -286,7 +296,7 @@ li.underline hr{
 }
 
 
-/* footer */
+/* FOOTER */
 
 footer{
     height: 90px;
@@ -426,7 +436,7 @@ footer .btn i{
 
 
 
-/* sezione hover */
+/* SEZIONE HOVER */
 
 
 
