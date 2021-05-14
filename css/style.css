@@ -243,6 +243,17 @@ li a{
     margin: 0 10px;    
 }
 
+li.underline div{
+    text-align: center;
+}
+
+li.underline hr{
+    color: #adff2f;
+    max-width: 30%;
+    margin-left: 35%;
+
+}
+
 .cover{
     width: 100%;    
     margin-top: 20px;
@@ -429,6 +440,13 @@ footer .btn i{
 .upgrade>span:hover{
     font-size:13px
 }
+
+
+/* lista menu album hover */
+.main-menu ul li a:hover{
+    color: white;
+}
+
 
 /* album hover */
 .cover:hover img{
