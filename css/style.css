@@ -27,8 +27,6 @@ p{
 }
 
 
-
-
 /* main */
 
 /* pannello laterale */
@@ -190,12 +188,7 @@ hr{
 }
 
 
-
-
-
-
-
-/* menu alto */
+/* main-body */
 
 /* container centrale */
 .main-container{
@@ -248,9 +241,26 @@ li a{
     margin: 0 10px;    
 }
 
+.cover{
+    width: 100%;    
+    margin-top: 20px;
+    position: relative;
+}
+
+.cover .play-hover{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.play-hover>i{
+    font-size: 50px;
+}
+
 .row .main-body img{
     width: 100%;
-    margin-top: 20px;
 }
 
 .box-info{
@@ -261,10 +271,6 @@ li a{
 .main-body .row:last-child img{
     border-radius: 50%;
 }
-
-
-
-
 
 
 /* footer */
@@ -323,11 +329,6 @@ footer .btn i{
 }
 
 
-
-
-
-
-
 /* box centrale */
 
 .box.cnt{
@@ -377,8 +378,6 @@ footer .btn i{
 
 
 
-
-
 /* box di destra */
 
 
@@ -410,6 +409,35 @@ footer .btn i{
 }
 
 
+
+
+
+
+/* sezione hover */
+
+
+
+/* aside hover */
+
+
+/* main body hover */
+
+
+/* upgrade hover */
+
+/* album hover */
+.cover:hover img{
+    filter: brightness(50%);
+}
+
+.cover:hover .play-hover{
+    display: block;
+    cursor: pointer;
+}
+
+
+
+/* footer hover */
 
 
 
