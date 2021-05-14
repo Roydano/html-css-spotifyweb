@@ -84,8 +84,7 @@ p{
 
 nav .list-side-menu,
 .playlist .add,
-.sidebar-bottom .download,
-.sidebar-bottom .user{
+.sidebar-bottom .download{
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -187,6 +186,10 @@ hr{
     margin-bottom: 10px;
 }
 
+.sidebar-bottom .user{
+    display: flex;
+    align-items: center;
+}
 
 .sidebar-bottom .user div{
     width: 30px;
@@ -367,19 +370,46 @@ footer .btn i{
 .box.cnt .display-control i{
     font-size: 15px;
     margin: 0 10px;
+    cursor: pointer;
 }
 
 .box.cnt .display-control i:nth-child(3){
     font-size: 25px;
     margin: 0 10px;
+    transition: font-size;
 }
+
 
 .box.cnt .barra .sopra{
     width: 100px;
     height: 5px;
     background-color: white;
     border-radius: 5px;
+    display: flex;
+    cursor:pointer;
 }
+
+.box.cnt .barra .sopra-hover{
+    width: 100px;
+    height: 5px;
+    background-color: #adff2f;
+    border-radius: 5px;
+    display: none;
+    position: relative;
+    cursor: pointer;
+}
+
+.box.cnt .sopra-hover .circle{
+    height: 15px;
+    width: 15px;
+    background-color: white;
+    position: absolute;
+    left: 85px;
+    top: -5px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
 
 .box.cnt .barra .sotto{
     width: 400px;
@@ -423,6 +453,27 @@ footer .btn i{
     border-radius: 5px;
 }
 
+.box.dx .barra .sopra-hover{
+    width: 30px;
+    height: 5px;
+    background-color: #adff2f;
+    border-radius: 5px;
+    display: none;
+    position: relative;
+    cursor: pointer;
+}
+
+.box.dx .sopra-hover .circle{
+    height: 15px;
+    width: 15px;
+    background-color: white;
+    position: absolute;
+    left: 15px;
+    top: -5px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
 .box.dx .barra .sotto{
     width: 100px;
     height: 5px;
@@ -441,6 +492,22 @@ footer .btn i{
 
 
 /* aside hover */
+
+.list-side-menu:hover img{
+    filter:invert(0)
+}
+
+.list-side-menu:hover a,
+.add:hover a,
+.list-overflow li:hover a,
+.download p:hover a{
+    color: white;
+}
+
+.add:hover div{
+    background-color: white;
+}
+
 
 
 /* main body hover */
@@ -472,7 +539,29 @@ footer .btn i{
 
 /* footer hover */
 
+/* box sx */
+.box.sx .btn i:hover{
+    color:white;
+}
 
+/* box centrale */
+.box.cnt .display-control i:nth-child(3):hover{
+    font-size: 27px;
+}
+
+.box.cnt .barra:hover .sopra,
+.box.dx .barra:hover .sopra{
+    
+    display:none;
+}
+
+.box.cnt .barra:hover .sopra-hover,
+.box.dx .barra:hover .sopra-hover{
+    
+    display:flex;
+}
+
+/* box dx */
 
 
 
