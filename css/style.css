@@ -222,6 +222,8 @@ hr{
     border-radius: 20px;
     margin-right: 25px;
     padding: 10px 40px;
+    cursor: pointer;
+    transition: font-size;
 }
 
 /* contenuto main */
@@ -424,6 +426,9 @@ footer .btn i{
 
 
 /* upgrade hover */
+.upgrade>span:hover{
+    font-size:13px
+}
 
 /* album hover */
 .cover:hover img{
