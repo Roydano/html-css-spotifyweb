@@ -24,7 +24,7 @@
 
     <title>Spotify web</title>
 </head>
-<body class="debug">
+<body>
 
     <!-- start page body -->
     <main>
@@ -32,7 +32,7 @@
             <div class="row">
 
                 <!-- pannello laterale  -->
-                <div class="col-xs-2">
+                <div class="col-side col-side-responsive">
                     <div class="aside">
                         
                         <div class="row between-xs sidebar-container">
@@ -40,7 +40,8 @@
 
                                 <!-- logo spotify -->
                                 <div class="logo pdl-10">
-                                    <img src="img/logo.svg" alt="logo spotify">
+                                    <img id="complete-logo" src="img/logo.svg" alt="logo spotify">
+                                    <img id="small" src="img/logo-small.svg" alt="icona spotify">
                                 </div>
                                 <!-- end logo spotify -->
 
@@ -96,7 +97,7 @@
                             <!-- nome utente e download -->
                             <div class="sidebar-bottom">
 
-                                <div class="download pdl-10">
+                                <div class="download">
                                     <div><img src="img/download.svg" alt="download"></div>                    
                                     <p><a href="#">Installa app</a></p>
                                 </div>
@@ -118,7 +119,7 @@
                 <!-- fine pannello laterale -->
 
                 <!-- contenitore centrale -->
-                <div class="col-xs-10">
+                <div class="col-xs col-sm col-md col-lg">
                     <div class="main-container">
 
                         <!-- barra alta upgrade -->
@@ -156,7 +157,7 @@
                                     <div class="row">
 
                                         <!-- cover 1 -->
-                                        <div class="col-xs-2 pd-r-20">
+                                        <div class="col-xs-6 col-sm-6 col-md-3 col-lg-2 pd-5">
                                             <div class="cover">
                                                 <img src="img/metal_lifting.jpg" alt="metal lifting">
                                                 <div class="play-hover">
@@ -172,7 +173,7 @@
 
 
                                         <!-- cover 2 -->
-                                        <div class="col-xs-2 pd-r-20">
+                                        <div class="col-xs-6 col-sm-6 col-md-3 col-lg-2 pd-5">
                                             <div class="cover">
                                                 <img src="img/stranger.jpeg" alt="stranger thing">
                                                 <div class="play-hover">
@@ -188,7 +189,7 @@
 
 
                                         <!-- cover 3 -->
-                                        <div class="col-xs-2 pd-r-20">
+                                        <div class="col-xs-6 col-sm-6 col-md-3 col-lg-2 pd-5">
                                             <div class="cover">
                                                 <img src="img/aquietplace.jpeg" alt="a quiet place">
                                                 <div class="play-hover">
@@ -204,7 +205,7 @@
 
 
                                         <!-- cover 4 -->
-                                        <div class="col-xs-2 pd-r-20">
+                                        <div class="col-xs-6 col-sm-6 col-md-3 col-lg-2 pd-5">
                                             <div class="cover">
                                                 <img src="img/split.jpeg" alt="split">
                                                 <div class="play-hover">
@@ -220,7 +221,7 @@
 
 
                                         <!-- cover 5 -->
-                                        <div class="col-xs-2 pd-r-20">
+                                        <div class="col-xs-6 col-sm-6 col-md-3 col-lg-2 pd-5">
                                             <div class="cover">
                                                 <img src="img/cure.jpeg" alt="cure">
                                                 <div class="play-hover">
@@ -236,7 +237,7 @@
 
 
                                         <!-- cover 6 -->
-                                        <div class="col-xs-2 pd-r-20">
+                                        <div class="col-xs-6 col-sm-6 col-md-3 col-lg-2 pd-5">
                                             <div class="cover">
                                                 <img src="img/sinister.jpeg" alt="sinister">
                                                 <div class="play-hover">
@@ -255,14 +256,14 @@
                                     <p>Più ascolti, più accurati saranno i suggerimenti.</p>
                                     <div class="row">
 
-                                        <div class="col-xs-2 pd-r-20">
+                                        <div class="col-xs-6 col-sm-6 col-md-3 col-lg-2 pd-5">
                                             <img src="img/radar.jpeg" alt="release radar">
                                             <div class="box-info">
                                                 <h4>Release Radar</h4> 
                                             </div>                  
                                         </div>
 
-                                        <div class="col-xs-2 pd-r-20">
+                                        <div class="col-xs-6 col-sm-6 col-md-3 col-lg-2 pd-5">
                                             <img src="img/mixdaily.jpeg" alt="dayli mix">
                                             <div class="box-info">
                                                 <h4>Daily Mix 1</h4> 
@@ -275,14 +276,14 @@
                                     <p>Più ascolti, più accurati saranno i suggerimenti.</p>
                                     <div class="row">
 
-                                        <div class="col-xs-2 pd-r-20">
+                                        <div class="col-xs-6 col-sm-6 col-md-3 col-lg-2 pd-5">
                                             <img src="img/youg.jpeg" alt="youg">
                                             <div class="box-info">
                                                 <h4>Lana del Rey</h4> 
                                             </div>  
                                         </div>
 
-                                        <div class="col-xs-2 pd-r-20">
+                                        <div class="col-xs-6 col-sm-6 col-md-3 col-lg-2 pd-5">
                                             <img src="img/einaudi.jpeg" alt="Ludovico Einaudi">
                                             <div class="box-info">
                                                 <h4>Ludovico Einaudi</h4> 
@@ -306,81 +307,72 @@
     <footer>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-xs-12">
-                    <div class="row">
 
-                        <!-- box sinistra -->
-                        <div class="col-xs-2">
-                            <div class="box sx">
-                                <div class="brano">
-                                    <div class="img-icon"><img src="img/sinister.jpeg" alt="sinister"></div>
-                                    <div class="brano-info">
-                                        <h5>Sinister</h5>
-                                        <span>Brano Nome</span>
-                                    </div>
-                                </div>
-                                <div class="btn">
-                                    <i class="far fa-heart"></i>
-                                    <i class="far fa-folder"></i>
-                                </div>
+                <!-- box sinistra -->
+                <div class="col-xs-4 col-sm-3 col-md-3 col-lg-2">
+                    <div class="box sx">
+                        <div class="brano">
+                            <div class="img-icon"><img src="img/sinister.jpeg" alt="sinister"></div>
+                            <div class="brano-info">
+                                <h5>Sinister</h5>
+                                <span>Brano Nome</span>
                             </div>
                         </div>
-                        <!-- end box sinistra -->
-
-                        <!-- box centrale -->
-                        <div class="col-xs-8">
-                            <div class="box cnt">
-                                <div class="row">
-                                    <div class="col-xs-12">
-                                        <div class="display-control">
-                                            <i class="fas fa-random"></i>
-                                            <i class="fas fa-step-backward"></i>
-                                            <i class="far fa-play-circle"></i>
-                                            <i class="fas fa-step-forward"></i>
-                                            <i class="fas fa-redo-alt"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-xs-12">
-                                        <div class="display-time">
-                                            <span>0:25</span>
-                                            <div class="barra">
-                                                <div class="sopra-hover">
-                                                    <div class="circle"></div>
-                                                </div>
-                                                <div class="sopra"></div>
-                                                <div class="sotto"></div>                    
-                                            </div>
-                                        <span>4:35</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
+                        <div class="btn">
+                            <i class="far fa-heart"></i>
+                            <i class="far fa-folder"></i>
                         </div>
-                        <!-- end box centrale -->
-
-                        <!-- box destra -->
-                        <div class="col-xs-2">
-                            <div class="box dx">
-                                <i class="fas fa-list-ul"></i>
-                                <i class="fas fa-desktop"></i>
-                                <i class="fas fa-volume-up"></i>               
-                             <div class="barra">
-                                <div class="sopra-hover">
-                                    <div class="circle"></div>
-                                </div>
-                                 <div class="sopra"></div>
-                                 <div class="sotto"></div>                    
-                             </div>
-                            </div>
-
-                        </div>
-                        <!-- end box destra -->
-
                     </div>
                 </div>
+                <!-- end box sinistra -->
+
+                <!-- box centrale -->
+                <div class="col-xs-4 col-sm-6 col-md-6 col-lg-8">
+                    <div class="box cnt">
+                        <div class="row">
+                            <div class="display-control">
+                                <i class="fas fa-random"></i>
+                                <i class="fas fa-step-backward"></i>
+                                <i class="far fa-play-circle"></i>
+                                <i class="fas fa-step-forward"></i>
+                                <i class="fas fa-redo-alt"></i> 
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="display-time">
+                                <span>0:25</span>
+                                <div class="barra">
+                                    <div class="sopra-hover">
+                                        <div class="circle"></div>
+                                    </div>
+                                    <div class="sopra"></div>
+                                    <div class="sotto"></div>                    
+                                </div>
+                                <span>4:35</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- end box centrale -->
+
+                <!-- box destra -->
+                <div class="col-xs-4 col-sm-3 col-md-3 col-lg-2">
+                    <div class="box dx">
+                        <i class="fas fa-list-ul"></i>
+                        <i class="fas fa-desktop"></i>
+                        <i class="fas fa-volume-up"></i>               
+                        <div class="barra">
+                        <div class="sopra-hover">
+                            <div class="circle"></div>
+                        </div>
+                            <div class="sopra"></div>
+                            <div class="sotto"></div>                    
+                        </div>
+                    </div>
+
+                </div>
+                <!-- end box destra -->
             </div>
         </div>
 
