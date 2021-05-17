@@ -704,11 +704,21 @@ footer .btn i{
         left: 240px;
     }
 
+    .main-menu li a{
+        font-size: 12px;
+    }
+
+    .box-info h4{
+        font-size: 14px;
+    }
+
+    .box-info p{
+        font-size: 11px;
+    }
+
 
     /* footer */
-
-   
-    
+      
     /* box sx */
 
     .mini-img{
