@@ -39,15 +39,12 @@ p{
     height: calc(100vh - 90px);
     background-color: black;
     overflow: hidden;
-    
-
 }
 
 .aside .row{
     flex-direction: column;
     height: 100%;
-    width: 100%;
-    
+    width: 100%; 
 }
 
 .sidebar-container{
@@ -59,11 +56,9 @@ p{
 .sidebar-top{
     width: 100%;
     height: calc( 100% - 100px);
-
-    
 }
 
-/* logo */
+/* logo barra laterale*/
 
 .logo{
     padding-top: 10px;
@@ -79,8 +74,7 @@ p{
 }
 
 
-
-/* menu lista sidebar-top */
+/* menu lista barra laterale in alto */
 
 .sidebar-top nav{
     margin-bottom: 20px;
@@ -129,7 +123,7 @@ nav .list-side-menu p>a,
 }
 
 
-/* palylist side bar */
+/* sezione palylist barra laterale */
 
 .playlist{
     overflow: hidden;
@@ -155,7 +149,7 @@ nav .list-side-menu p>a,
 }
 
 
-/* lista playlist */
+/* lista delle playlist in overflow */
 .playlist{
     display: none;
 }
@@ -181,7 +175,7 @@ nav .list-side-menu p>a,
 }
 
 
-/* sidebar-bottom */
+/* parte bassa barra laterale */
 .sidebar-bottom{
     height: 100px;
     padding: 10px 0;
@@ -241,7 +235,7 @@ nav .list-side-menu p>a,
     overflow-y: auto;
 }
 
-/* barra layover */
+/* barra layover in alto*/
 .main-header{
     height: 90px;
     background-color: rgba(0, 0, 0, 0.5);
@@ -276,7 +270,7 @@ nav .list-side-menu p>a,
     padding: 20px 10px;
 }
 
-/* main-menu */
+/* menu del contenuto*/
 
 .main-menu ul{
     display: flex;
@@ -286,6 +280,7 @@ nav .list-side-menu p>a,
 
 li{
     text-transform: uppercase;
+    margin-bottom: 20px;
 }
 
 .main-menu li a{
@@ -304,6 +299,9 @@ li.underline hr{
     margin-left: 35%;
 
 }
+
+
+/* sezione cover e brani */
 
 .main-body h2{
     font-size: 21px;
@@ -549,7 +547,7 @@ footer .btn i{
 /* SEZIONE HOVER */
 
 
-/* aside hover */
+/* HOVER SUL PANNELLO PRINCIPALE */
 
 
 .list-side-menu:hover img{
@@ -569,7 +567,7 @@ footer .btn i{
 
 
 
-/* main body hover */
+/* HOVER SUL CONTENUTO PRINCIPALE */
 
 
 /* upgrade hover */
@@ -596,7 +594,7 @@ footer .btn i{
 
 
 
-/* footer hover */
+/* HOVER SUL FOOTER */
 
 /* box sx */
 .box .btn i:hover{
@@ -625,10 +623,10 @@ footer .btn i{
 
 /* MEDIA QUERY */
 
-/* small */
+/* SMALL */
 @media screen and (min-width:576px) {
 
-    /* aside */
+    /* PANNELLO LATERALE */
 
     .col-side-responsive{
         min-width: 240px;
@@ -652,7 +650,7 @@ footer .btn i{
         width: 60%;
     }
 
-    /* lista menu alta */
+    /* menu parte alta pannello laterale */
 
     .list-side-menu{
         margin-bottom: 0px;
@@ -676,7 +674,7 @@ footer .btn i{
         display: block;
     }
 
-    /* barra bassa user */
+    /* barra bassa user e download */
     .sidebar-bottom{
         align-items: flex-start;
     
@@ -703,7 +701,7 @@ footer .btn i{
     
 
 
-    /* main body */
+    /* CONTENUTO PRINCIPALE */
 
     .main-header{
         left: 240px;
@@ -722,7 +720,7 @@ footer .btn i{
     }
 
 
-    /* footer */
+    /* FOOTER */
       
     /* box sx */
 
@@ -760,6 +758,8 @@ footer .btn i{
 }
 
 
+
+/* MEDIA */
 @media screen and (min-width:768px) {
     
     footer .btn {
@@ -769,74 +769,10 @@ footer .btn i{
 }
 
 
-
+/* COMPORTAMENTO A ALTEZZA 350PX */
 @media screen and (max-height:350px) {
     
     .main-header{
         display: none;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-/* debug */
-
-/* .debug .aside{
-    background-color: red;
-} */
-
-/* .debug .main-container{
-    background-color: lime;
-} */
-
-
-/* .debug .logo{
-    height: 90px;
-    background-color: coral;
-} */
-
-
-/* .debug .playlist{
-    height: 100px;
-    background-color: turquoise;
-} */
-
-
-/* .debug .sidebar-bottom{
-    background-color: red;
-} */
-
-
-/* .debug nav .home div{
-    background-color: red;
-} */
-
-
-
-
-
-
-
-
-/* footer debug */
-
-/* .debug footer{
-    
-    background-color: brown;
-} */
-
-
-/* .debug footer .box{
-    height: 90px;
-    background-color: yellow;
-    border: 1px solid green;
-} */
