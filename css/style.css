@@ -543,6 +543,9 @@ footer .btn i{
 
 
 
+
+
+
 /* SEZIONE HOVER */
 
 
@@ -616,6 +619,8 @@ footer .btn i{
     
     display:flex;
 }
+
+
 
 
 /* MEDIA QUERY */
@@ -765,7 +770,12 @@ footer .btn i{
 
 
 
-
+@media screen and (max-height:350px) {
+    
+    .main-header{
+        display: none;
+    }
+}
 
 
 
