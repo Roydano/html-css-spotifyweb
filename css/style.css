@@ -471,7 +471,7 @@ footer .btn i{
     width: 15px;
     background-color: white;
     position: absolute;
-    left: 85%;
+    left: 91%;
     top: -5px;
     border-radius: 50%;
     cursor: pointer;
@@ -535,7 +535,7 @@ footer .btn i{
     width: 15px;
     background-color: white;
     position: absolute;
-    left: 15px;
+    left: 70%;
     top: -5px;
     border-radius: 50%;
     cursor: pointer;
@@ -719,10 +719,6 @@ footer .btn i{
     .info-song{
         min-width: 75px;
         justify-content: flex-start;
-    }
-
-    .box .sopra-hover .circle{
-        left:4vw;
     }
 
     /* box centrale */
